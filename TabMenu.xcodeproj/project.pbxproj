@@ -6,10 +6,32 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		8FF7632A1DA39E0700EA62B4 /* TabMenuBinary */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8FF7632B1DA39E0700EA62B4 /* Build configuration list for PBXAggregateTarget "TabMenuBinary" */;
+			buildPhases = (
+				8FF7632E1DA39E1200EA62B4 /* Run Script */,
+				8FF7632F1DA39EB500EA62B4 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = TabMenuBinary;
+			productName = TabMenuBinary;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		8FF763081DA34CEE00EA62B4 /* TabMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF762FE1DA34CED00EA62B4 /* TabMenu.framework */; };
 		8FF7630D1DA34CEE00EA62B4 /* TabMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF7630C1DA34CEE00EA62B4 /* TabMenuTests.swift */; };
 		8FF7630F1DA34CEE00EA62B4 /* TabMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FF763011DA34CEE00EA62B4 /* TabMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FF7631A1DA34E1400EA62B4 /* TabMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF763181DA34E1400EA62B4 /* TabMenuCollectionViewCell.swift */; };
+		8FF7631B1DA34E1400EA62B4 /* TabMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF763191DA34E1400EA62B4 /* TabMenuCollectionViewCell.xib */; };
+		8FF7631D1DA3563F00EA62B4 /* TabMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF7631C1DA3563F00EA62B4 /* TabMenuOption.swift */; };
+		8FF763231DA3688000EA62B4 /* TabMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF763221DA3688000EA62B4 /* TabMenuView.xib */; };
+		8FF763251DA3689300EA62B4 /* TabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF763241DA3689300EA62B4 /* TabMenuView.swift */; };
+		8FF763271DA38E8D00EA62B4 /* TabMenuPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF763261DA38E8D00EA62B4 /* TabMenuPageViewController.swift */; };
+		8FF763291DA394FD00EA62B4 /* TabMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF763281DA394FD00EA62B4 /* TabMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +51,13 @@
 		8FF763071DA34CEE00EA62B4 /* TabMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF7630C1DA34CEE00EA62B4 /* TabMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuTests.swift; sourceTree = "<group>"; };
 		8FF7630E1DA34CEE00EA62B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FF763181DA34E1400EA62B4 /* TabMenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		8FF763191DA34E1400EA62B4 /* TabMenuCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabMenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		8FF7631C1DA3563F00EA62B4 /* TabMenuOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabMenuOption.swift; sourceTree = "<group>"; };
+		8FF763221DA3688000EA62B4 /* TabMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabMenuView.xib; path = TabMenu/TabMenuView.xib; sourceTree = SOURCE_ROOT; };
+		8FF763241DA3689300EA62B4 /* TabMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabMenuView.swift; sourceTree = "<group>"; };
+		8FF763261DA38E8D00EA62B4 /* TabMenuPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabMenuPageViewController.swift; sourceTree = "<group>"; };
+		8FF763281DA394FD00EA62B4 /* TabMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +102,13 @@
 			children = (
 				8FF763011DA34CEE00EA62B4 /* TabMenu.h */,
 				8FF763021DA34CEE00EA62B4 /* Info.plist */,
+				8FF763281DA394FD00EA62B4 /* TabMenuViewController.swift */,
+				8FF763261DA38E8D00EA62B4 /* TabMenuPageViewController.swift */,
+				8FF763241DA3689300EA62B4 /* TabMenuView.swift */,
+				8FF763221DA3688000EA62B4 /* TabMenuView.xib */,
+				8FF763181DA34E1400EA62B4 /* TabMenuCollectionViewCell.swift */,
+				8FF763191DA34E1400EA62B4 /* TabMenuCollectionViewCell.xib */,
+				8FF7631C1DA3563F00EA62B4 /* TabMenuOption.swift */,
 			);
 			path = TabMenu;
 			sourceTree = "<group>";
@@ -148,9 +184,14 @@
 				TargetAttributes = {
 					8FF762FD1DA34CED00EA62B4 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					8FF763061DA34CEE00EA62B4 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					8FF7632A1DA39E0700EA62B4 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -170,6 +211,7 @@
 			targets = (
 				8FF762FD1DA34CED00EA62B4 /* TabMenu */,
 				8FF763061DA34CEE00EA62B4 /* TabMenuTests */,
+				8FF7632A1DA39E0700EA62B4 /* TabMenuBinary */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF7631B1DA34E1400EA62B4 /* TabMenuCollectionViewCell.xib in Resources */,
+				8FF763231DA3688000EA62B4 /* TabMenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,11 +235,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8FF7632E1DA39E1200EA62B4 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+		};
+		8FF7632F1DA39EB500EA62B4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\nlipo -info \"${PROJECT_DIR}/${PROJECT_NAME}.framework/${PROJECT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8FF762F91DA34CED00EA62B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF763291DA394FD00EA62B4 /* TabMenuViewController.swift in Sources */,
+				8FF7631A1DA34E1400EA62B4 /* TabMenuCollectionViewCell.swift in Sources */,
+				8FF7631D1DA3563F00EA62B4 /* TabMenuOption.swift in Sources */,
+				8FF763271DA38E8D00EA62B4 /* TabMenuPageViewController.swift in Sources */,
+				8FF763251DA3689300EA62B4 /* TabMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,42 +399,54 @@
 		8FF763131DA34CEE00EA62B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TabMenu/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "@rpath";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = Kawakami.TabMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
 		8FF763141DA34CEE00EA62B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TabMenu/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "@rpath";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = Kawakami.TabMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};
 		8FF763161DA34CEE00EA62B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TabMenuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kawakami.TabMenuTests;
@@ -367,11 +458,26 @@
 		8FF763171DA34CEE00EA62B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TabMenuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kawakami.TabMenuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8FF7632C1DA39E0700EA62B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8FF7632D1DA39E0700EA62B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -394,6 +500,7 @@
 				8FF763141DA34CEE00EA62B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FF763151DA34CEE00EA62B4 /* Build configuration list for PBXNativeTarget "TabMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +509,16 @@
 				8FF763171DA34CEE00EA62B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FF7632B1DA39E0700EA62B4 /* Build configuration list for PBXAggregateTarget "TabMenuBinary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FF7632C1DA39E0700EA62B4 /* Debug */,
+				8FF7632D1DA39E0700EA62B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

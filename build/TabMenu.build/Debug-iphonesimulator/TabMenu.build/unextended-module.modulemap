@@ -1,0 +1,10 @@
+framework module TabMenu {
+  umbrella header "TabMenu.h"
+
+  export *
+  module * { export * }
+}
+
+module TabMenu.__Swift {
+    exclude header "TabMenu-Swift.h"
+}

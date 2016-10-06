@@ -1,0 +1,9 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "66824a49be8d96d0181b0282349d517b"
+build_time: [529061412, 870182000]
+inputs:
+  "/Users/Altair/Desktop/Xcode/Framework/TabMenu/TabMenu/TabMenuViewController.swift": [528902688, 0]
+  "/Users/Altair/Desktop/Xcode/Framework/TabMenu/TabMenu/TabMenuCollectionViewCell.swift": [529051128, 0]
+  "/Users/Altair/Desktop/Xcode/Framework/TabMenu/TabMenu/TabMenuOption.swift": [528897513, 0]
+  "/Users/Altair/Desktop/Xcode/Framework/TabMenu/TabMenu/TabMenuPageViewController.swift": [529035815, 0]
+  "/Users/Altair/Desktop/Xcode/Framework/TabMenu/TabMenu/TabMenuView.swift": [529061378, 0]

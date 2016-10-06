@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/Altair/Library/Developer/Xcode/DerivedData/TabMenu-ckjfkycyfszsbehcwjwzwboyulpx/Build/Products/Debug-iphonesimulator/TabMenu.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/Altair/Desktop/Xcode/Framework/TabMenu/build/TabMenu.build/Debug-iphonesimulator/TabMenu.build/unextended-module.modulemap',
+    }]
+  }]
+}
